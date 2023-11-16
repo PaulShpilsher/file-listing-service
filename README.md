@@ -6,6 +6,9 @@ This service can handle directories containg huge number of files with a small m
 
 Disclamer: Here I wanted to try something new for me - instead of express.js or koa.js I decided to give fastify a try.  So, for now there is no configuration, middleware, cors, or whatever.. just a simple /listing endpoint listening on port 3000.
 
+Note: important to remember the service accesses the file system under the credentials (i.e. access rights) of the current user.  So, if there are issues with not having access rights to read the file system - run the server under the user with proper (or elevated) privileges.
+
+
 ## Approach
 
 In a nutshell instead of reading all of the contents of a directory with ```fs.readdir``` we open directory with ```fs.opendir``` and then enumerate directory conents with async iterator.
