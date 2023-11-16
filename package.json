@@ -1,8 +1,7 @@
 {
-  "name": "ts-starter",
+  "name": "file-listing-service",
   "version": "0.0.0",
-  "description": "Node.js TypeScript Starter",
-  "main": "main.ts",
+  "description": "File listing REST API server",
   "scripts": {
     "build": "tsc",
     "lint": "eslint . --ignore-path .eslintignore --ext .ts",
@@ -29,7 +28,14 @@
   "dependencies": {
     "fastify": "^4.24.3"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "node",
+    "rest",
+    "typescript",
+    "fastify",
+    "eslint",
+    "prettier"
+  ],
+  "author": "Paul Shpilsher <paul.shpilsher@gmail.com>",
   "license": "ISC"
 }
