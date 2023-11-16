@@ -27,7 +27,6 @@ export const serverSetup = () => {
     try {
       const entries = await ListingService.getFiles(path, offset, limit);
       const dto: ListingDto = {
-        path,
         entries,
       };
       reply.code(200).send(dto);
