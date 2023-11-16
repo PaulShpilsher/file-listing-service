@@ -36,7 +36,7 @@ To exercise the service, in another terminal window run:
 ```sh
 curl 'http://localhost:3000/listing?path=/somedir&limit=100&offset=0'
 ```
-Note: replace ```/somedir`` with whatever directory you want to scan.
+Note: replace ```/somedir``` with whatever directory you want to scan.
 
 
 ----------------------------------------------------------------
